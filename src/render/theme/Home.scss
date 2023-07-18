@@ -1,0 +1,136 @@
+  .icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+  }
+  body{
+    height: 100%;
+    width: 100%;
+  }
+.home {
+  text-align: left;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+    .content {
+    height: 100%; 
+    padding-top: 70px;
+    width: 100%;
+    }
+
+  .buttons {
+    background: #f0f0f0;
+    left: 0;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .select-file,
+  .select-decompress-path,
+  .select-compress-path,
+  .back {
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    height: 50px;
+    margin-left: 20px;
+    vertical-align: top;
+    width: 50px;
+
+    &:first-child {
+      margin: 0;
+    }
+  }
+
+  .select-file {
+    svg {
+      height: 34px;
+      position: relative;
+      top: -2px;
+      width: 34px;
+    }
+  }
+
+  .select-decompress-path {
+    position: relative;
+
+    svg {
+      height: 30px;
+      margin-bottom: 1px;
+      width: 30px;
+    }
+
+    span {
+      top: 3px;
+      position: relative;
+    }
+  }
+
+  .select-compress-path {
+    position: relative;
+
+    svg {
+      height: 34px;
+      margin-bottom: 1px;
+      width: 35px;
+    }
+
+    span {
+      left: -2px;
+      top: -2px;
+      position: relative;
+    }
+  }
+
+  .back {
+    svg {
+      height: 32px;
+      position: relative;
+      top: -2px;
+      width: 34px;
+    }
+  }
+
+  .structure-list {
+    height: 100%;
+    margin-top: 10px;
+    overflow: auto;
+    padding-bottom: 15px;
+    width: 100%;
+  }
+
+  .structure-item {
+    cursor: pointer;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 10px;
+
+    .icon-fold {
+      color: green;
+    }
+
+    &:hover,
+    &.selected {
+      background: #60a7eb;
+      color: #fff;
+    }
+  }
+
+  label {
+    display: inline-block;
+    width: 80px;
+  }
+
+  input {
+    border: 1px solid #999;
+    border-radius: 5px;
+    height: 28px;
+    width: 300px;
+  }
+}
